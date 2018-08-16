@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="phonecat">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
@@ -7,11 +7,17 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Angular project</title>
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-  <script src="bower_components/angular/angular.js"></script>
+  <link rel="stylesheet" href="css/app.css">
+  <!--<script src="bower_components/angular/angular.min.js"></script>-->
+  <script src="https://code.angularjs.org/1.1.5/angular.min.js"></script>
+  <!--<script src="bower_components/angular/angular-resource.js"></script>-->
+  <script src="js/app.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script>
 </head>
 <body>
 
-  <p>Nothing here {{ 'yet' + '!' }}</p>
+  <div ng-view></div>
 
 </body>
 </html>
